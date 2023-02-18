@@ -27,3 +27,7 @@ top: 300px;
 text-decoration-line: underline;
 color: rgba(17, 17, 17, 0.8);
 }
+.accordion-item{
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
