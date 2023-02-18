@@ -1,0 +1,29 @@
+.image{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 150px;
+}
+/* a#tab-4:hover {
+    color:gray;
+}
+a#tab-5:hover {
+    color:yellow;
+}
+a#tab-6:hover {
+    color:gold;
+}
+a#tab-7:hover {
+    color:blue;
+} */
+.card-title{
+    text-align: center;
+    margin-bottom: auto;
+}
+button{
+justify-content: center;
+align-items: center;
+margin-left: 40px;
+width: 75%;
+margin-bottom: 50px;
+}
