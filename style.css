@@ -4,18 +4,7 @@
     margin-right: 30px;
     margin-bottom: 150px;
 }
-/* a#tab-4:hover {
-    color:gray;
-}
-a#tab-5:hover {
-    color:yellow;
-}
-a#tab-6:hover {
-    color:gold;
-}
-a#tab-7:hover {
-    color:blue;
-} */
+
 .card-title{
     text-align: center;
     margin-bottom: auto;
@@ -26,4 +15,15 @@ align-items: center;
 margin-left: 40px;
 width: 75%;
 margin-bottom: 50px;
+}
+span{
+    color: rgba(17, 17, 17, 0.8);;
+}
+h4{
+    width: 263px;
+height: 30px;
+left: 1570px;
+top: 300px;
+text-decoration-line: underline;
+color: rgba(17, 17, 17, 0.8);
 }
