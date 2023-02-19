@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,8 +30,8 @@
     <!-- header end -->
     <main>
       <!-- card section -->
-      <div class="row row-cols-1 row-cols-md-4 mx-5 g-4">
-        <div class="col ">
+      <div class="row row-cols-1  row-cols-md-4 mx-5 g-4 mt-5 " id="color">
+        <div class="col col-sm-12 ">
           <div class="card h-100 bg-danger-subtle">
             <img class="image" src="./images/triangle.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -38,11 +39,11 @@
               <p class="card-text">Area (A) = 0.5 × b × h</p>
              
               <div class="d-flex justify-content-center align-items-center row-cols-md-3">
-                <input type="text" id="b" placeholder="b">cm
-                <input type="text" id="h" placeholder="h">cm 
+                <input type="text" id="b1" placeholder="b">cm
+                <input type="text" id="h1" placeholder="h">cm 
 
                 </div>
-                <button type="button" class="btn btn-primary mt-3 " onclick="calc();">Calculate</button>
+                <button type="button" class="btn btn-primary mt-3 " onclick="area1();">Calculate</button>
 
           
             </div>
@@ -55,11 +56,11 @@
               <h3 class="card-title">Rectangle</h3>
               <p class="card-text">Area (A) = w × I</p>
               <div class="d-flex justify-content-center align-items-center row-cols-md-3">
-                <input type="text" id="b" placeholder="b">cm
-                <input type="text" id="h" placeholder="h">cm 
+                <input type="text" id="b2" placeholder="b">cm
+                <input type="text" id="h2" placeholder="h">cm 
 
                 </div>
-                <button type="button" class="btn btn-primary mt-3  " onclick="calc();">Calculate</button>
+                <button type="button" class="btn btn-primary mt-3  " onclick="area2();">Calculate</button>
 
             </div>
           </div>
@@ -71,11 +72,11 @@
               <h3 class="card-title">Parallelogram</h3>
               <p class="card-text">Area (A) = w × l </p>
               <div class="d-flex justify-content-center align-items-center row-cols-md-3">
-                <input type="text" id="w" placeholder="w">cm
-                <input type="text" id="l" placeholder="l">cm 
+                <input type="text" id="b3" placeholder="w">cm
+                <input type="text" id="h3" placeholder="l">cm 
 
                 </div>
-                <button type="button" class="btn btn-primary mt-3 " onclick="calc();">Calculate</button>
+                <button type="button" class="btn btn-primary mt-3 " onclick="area3();">Calculate</button>
 
             </div>
           </div>
@@ -83,7 +84,17 @@
         <div class="col">
           <div class="card h-100">
             <div class="card-body">
-              <h4 class="card-title">Area Calculation</h4>
+              
+              <h4 class="card-title">Area Calculation:</h4>
+              <p>
+                Area of Triangle: <span id="tri1"></span><br>
+                Area of Rectangle: <span id="tri2"></span><br>
+                Area of Parallelogram: <span id="tri3"></span><br>
+                Area of Rhombus: <span id="tri4"></span><br>
+                Area of pentagon: <span id="tri5"></span><br>
+                Area of Ellipse: <span id="tri6"></span><br>
+              </p>
+
              
             </div>
           </div>
@@ -95,11 +106,11 @@
               <h5 class="card-title">Rhombus</h5>
               <p class="card-text">Area (A) = 0.5 × d1 × d2 </p>
               <div class="d-flex justify-content-center align-items-center row-cols-md-3">
-                <input type="text" id="d1" placeholder="d1">cm
-                <input type="text" id="d2" placeholder="d2">cm 
+                <input type="text" id="b4" placeholder="d1">cm
+                <input type="text" id="h4" placeholder="d2">cm 
 
                 </div>
-                <button type="button" class="btn btn-primary mt-3 " onclick="calc();">Calculate</button>
+                <button type="button" class="btn btn-primary mt-3 " onclick="area4();">Calculate</button>
 
             </div>
           </div>
@@ -111,11 +122,11 @@
               <h3 class="card-title">Pentagon</h3>
               <p class="card-text">Area (A) = 0.5 × a × b</p>
               <div class="d-flex justify-content-center align-items-center row-cols-md-3">
-                <input type="text" id="a" placeholder="a">cm
-                <input type="text" id="b" placeholder="b">cm 
+                <input type="text" id="b5" placeholder="a">cm
+                <input type="text" id="h5" placeholder="b">cm 
 
                 </div>
-                <button type="button" class="btn btn-primary mt-3 " onclick="calc();">Calculate</button>
+                <button type="button" class="btn btn-primary mt-3 " onclick="area5();">Calculate</button>
 
             </div>
           </div>
@@ -127,11 +138,11 @@
               <h3 class="card-title">Ellipse</h3>
               <p class="card-text">Area (A) = π × a × b</p>
               <div class="d-flex justify-content-center align-items-center row-cols-md-3">
-                <input type="text" id="a" placeholder="a">cm
-                <input type="text" id="b" placeholder="b">cm 
+                <input type="text" id="b6" placeholder="a">cm
+                <input type="text" id="h6" placeholder="b">cm 
 
                 </div>
-                <button type="button" class="btn btn-primary mt-3 " onclick="calc();">Calculate</button>
+                <button type="button" class="btn btn-primary mt-3 " onclick="area6();">Calculate</button>
 
             </div>
           </div>
@@ -139,8 +150,10 @@
       </div>
     </main>
     <!-- js link  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
     <script src="js/genus.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   
+ 
 </body>
 </html>
+
